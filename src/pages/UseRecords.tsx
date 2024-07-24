@@ -68,7 +68,7 @@ export default function UseRecords() {
     } )
     .catch((e: AxiosError) => {
       const errx = e as AxiosError
-      const msg = errx.response != undefined && errx.response.data != undefined ? errx.response!.data : errx.message ;
+      const msg = errx.response !== undefined && errx.response.data !== undefined ? errx.response!.data : errx.message ;
       setErrorMessage(msg as string);
     })
   }, []);

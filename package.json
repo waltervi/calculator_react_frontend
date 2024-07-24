@@ -2,7 +2,6 @@
   "name": "Calculator App",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -48,11 +47,6 @@
     ]
   },
   "devDependencies": {
-    "@eslint/js": "^9.7.0",
-    "@types/react-router-dom": "^5.3.3",
-    "eslint": "^9.7.0",
-    "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.8.0",
-    "typescript-eslint": "^7.17.0"
+    "@types/react-router-dom": "^5.3.3"
   }
 }

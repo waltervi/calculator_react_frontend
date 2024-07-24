@@ -8,18 +8,15 @@ import CalculatorView from "./CalculatorView";
 import UseRecords from "./UseRecords";
 import { User } from "../network/types";
 
-import NavDropdown from 'react-bootstrap/NavDropdown';
 interface MainPageProps {
   setUserLoggedIn: (value: User|null) => void;
   userLoggedIn: User;
 }
 
-
-
 function MainPage(props: MainPageProps) {
   console.log("props.userLoggedIn",props.userLoggedIn)
   return (
-     
+    
     <>
       <Navbar expand="lg" bg="dark" data-bs-theme="dark">
         <Container>

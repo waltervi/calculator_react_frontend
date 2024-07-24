@@ -150,7 +150,7 @@ function CalculatorView(props: CalculatorViewProps) {
       setBalance(response.balance)   
     } catch (e ) {
       const errx = e as AxiosError
-      const msg = errx.response != undefined && errx.response.data != undefined ? errx.response!.data : errx.message ;
+      const msg = errx.response !== undefined && errx.response.data !== undefined ? errx.response!.data : errx.message ;
       setErrorMessage(msg as string)
     }
   }
