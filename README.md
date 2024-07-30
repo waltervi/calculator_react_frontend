@@ -1,11 +1,15 @@
 # calculator_react_frontend
 Implementation of the front end part in react of the calculator challenge.
 
-## Tools used
+## Tools used and approach
 - React 18.2.0 
 - typescript 4.9.5
 - compiled with nodejs 20+
 - it uses axios, bootstrap and react-router
+- Due to some complexity in state management, I completely rewrote the front end using:
+    - React.useReducer instead of useState, in an specific file (stateManagement.ts)
+    - a Service class that encapsulates the front end logic (in CalculatorService.ts).
+    - CalculatorView, now is more clear to read, it has a separation of concerns between the view and the logic.
 
 ## Environment
 It has two environment files

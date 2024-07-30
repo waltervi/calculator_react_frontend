@@ -1,5 +1,5 @@
 import axios from "axios";
-import { OperationRecord } from "./types";
+import { OperationRecord, OperationResponse } from "./types";
 
 const API_BASE_URL = process.env.REACT_APP_API_URL;
 
@@ -27,7 +27,7 @@ export const OperationAPI = {
  
   },
 
-  executeOperation : async (operation:string,operand1 : number|null, operand2 : number|null) => {
+  executeOperation : async (operation:string,operand1 : number|null, operand2 : number|null) : Promise<OperationResponse> =>  {
     const url = API_BASE_URL + "/v1/operations";
   
     const body = {
